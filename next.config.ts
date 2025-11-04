@@ -1,8 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const isPages = process.env.GITHUB_PAGES === 'true'
+const repo = 'portfolio' // your repo name
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
-};
-
-export default nextConfig;
+export default {
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: isPages ? `/${repo}` : '',
+  assetPrefix: isPages ? `/${repo}/` : '',
+}

@@ -1,0 +1,1 @@
+// typed data for projects e.g. { slug, title, summary, tech: string[], image, links }

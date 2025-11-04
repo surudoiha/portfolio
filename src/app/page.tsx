@@ -1,3 +1,5 @@
+//landing with cards for projects
+
 import Image from "next/image";
 
 export default function Home() {
