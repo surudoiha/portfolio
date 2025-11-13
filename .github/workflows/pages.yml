@@ -26,7 +26,6 @@ jobs:
 
       - run: npm ci         # or "npm install" if no package-lock.json
       - run: GITHUB_PAGES=true npm run build
-      - run: npm run export
 
       - uses: actions/upload-pages-artifact@v3
         with:
