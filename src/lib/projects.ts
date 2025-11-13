@@ -22,7 +22,7 @@ export type Project = {
       title: "The Crucible — VFX Pipeline Automation",
       summary:
         "A Python-based tool that automates a video post-production pipeline by matching Baselight frame data with Xytech workorders, processing shots, and generating Excel/Vimeo outputs for VFX teams.",
-      image: "/public/vfx-pipeline.webp", 
+      image: "/images/vfx-pipeline.webp", 
       tech: ["Python", "MongoDB", "FFmpeg", "Vimeo API", "Pandas"],
       highlights: [
         "Cross-references Baselight and Xytech data into MongoDB",
@@ -33,7 +33,7 @@ export type Project = {
         repo: "https://github.com/surudoiha/vfx-pipeline-automation01",
         // demo: "...", // leave blank unless you make a demo later
       },
-      featured: true, // if want this to show near top
+      featured: true, 
     },
     
 
@@ -42,7 +42,7 @@ export type Project = {
       title: "Psy-Code-Ogists",
       summary:
         "Team-based capstone web app built with TypeScript and Next.js for a COMP 490 course, focused on applying software engineering practices in a collaborative setting.",
-      image: "/psy-code-ogists.webp",
+      image: "/images/psy-code-ogists.webp",
       tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       highlights: [
         "Collaborative project with a 5-person team (COMP 490 capstone)",

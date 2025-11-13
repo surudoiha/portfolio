@@ -11,14 +11,6 @@ export default function SiteHeader() {
           <Link href="/" className="font-semibold tracking-tight">
             SS
           </Link>
-          <nav className="hidden gap-4 md:flex">
-            <Link className="text-sm text-muted-foreground hover:text-foreground" href="/projects">
-              Projects
-            </Link>
-            <Link className="text-sm text-muted-foreground hover:text-foreground" href="/about">
-              About
-            </Link>
-          </nav>
         </div>
         <div className="flex items-center gap-2">
           <a
