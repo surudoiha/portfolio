@@ -82,7 +82,7 @@ export default function HomePage() {
             "
           >
             <iframe
-              src="/resume.pdf#view=FitH"
+              src="resume.pdf#view=FitH"
               title="SS Resume"
               className="h-[85vh] w-full"
             />
