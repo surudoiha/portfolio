@@ -36,31 +36,26 @@ export type Project = {
       featured: true, // if want this to show near top
     },
     
+
     {
-      slug: "nextjs-starter",
-      title: "Next.js Portfolio Starter",
-      summary: "Accessible card grid, static export for GitHub Pages, shadcn/ui components.",
-      //image: "/images/next-starter.webp",
-      tech: ["Next.js", "TypeScript", "Tailwind", "shadcn/ui"],
-      highlights: ["Lighthouse ≥95", "Static export ready", "Dark mode"],
+      slug: "psy-code-ogists",
+      title: "Psy-Code-Ogists",
+      summary:
+        "Team-based capstone web app built with TypeScript and Next.js for a COMP 490 course, focused on applying software engineering practices in a collaborative setting.",
+      image: "/psy-code-ogists.webp",
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      highlights: [
+        "Collaborative project with a 5-person team (COMP 490 capstone)",
+        "Uses a modern TypeScript/Next.js/Tailwind stack",
+        "Implements reusable components and shared UI patterns"
+      ],
       links: {
-        repo: "https://github.com/portfolio",
+        repo: "https://github.com/gevoglanyan/Psy-Code-Ogists",
+        // demo: "...", // add later 
       },
-      featured: true,
+      featured: false, 
     },
-    {
-      slug: "todo-ai",
-      title: "AI Todo App",
-      summary: "Simple task manager with semantic search and offline-first caching.",
-      //image: "/images/todo.webp",
-      tech: ["Next.js", "React", "IndexedDB"],
-      highlights: ["Search <100ms", "PWA installable"],
-      links: {
-        demo: "https://github.io/portfolio/todo",
-        repo: "https://github.com/todo-ai",
-      },
-    },
-    // add more...
+
   ];
   
   // helpers
