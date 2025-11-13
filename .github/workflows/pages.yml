@@ -18,14 +18,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
-      - run: corepack enable
-      - run: pnpm install --frozen-lockfile
-      - run: GITHUB_PAGES=true pnpm build   # honors basePath/assetPrefix
-      - run: pnpm export                    # Next 15: `pnpm next export` is `pnpm export`
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - run: npm ci         # or "npm install" if no package-lock.json
+      - run: GITHUB_PAGES=true npm run build
+      - run: npm run export
+
       - uses: actions/upload-pages-artifact@v3
-        with: { path: out }                 # static site lives in `out/`
+        with:
+          path: out         # static site from next export
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
