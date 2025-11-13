@@ -38,23 +38,3 @@ Next.js (App Router)
     ├── GitHub Actions workflow
     └── Static public files (robots, sitemap, OG image)
 ```
-
-
-
-
-## Deploy on Vercel
-
-The easiest way to deploy Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-
-#  my notes to myself
-UI bits installed to use:
-
-### shadcn/ui
-npx shadcn@latest init
-
-### components 
-npx shadcn@latest add card badge button separator navigation-menu
-
-### icons
-npm i lucide-react

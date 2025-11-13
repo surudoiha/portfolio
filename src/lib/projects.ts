@@ -18,6 +18,25 @@ export type Project = {
   
   export const projects: Project[] = [
     {
+      slug: "vfx-pipeline-automation",
+      title: "The Crucible — VFX Pipeline Automation",
+      summary:
+        "A Python-based tool that automates a video post-production pipeline by matching Baselight frame data with Xytech workorders, processing shots, and generating Excel/Vimeo outputs for VFX teams.",
+      image: "/vfx-pipeline.webp", 
+      tech: ["Python", "MongoDB", "FFmpeg", "Vimeo API", "Pandas"],
+      highlights: [
+        "Cross-references Baselight and Xytech data into MongoDB",
+        "Extracts shots, generates thumbnails, and builds Excel reports",
+        "Automates batch uploads of rendered shots to Vimeo"
+      ],
+      links: {
+        repo: "https://github.com/surudoiha/vfx-pipeline-automation01",
+        // demo: "...", // leave blank unless you make a demo later
+      },
+      featured: true, // if want this to show near top
+    },
+    
+    {
       slug: "nextjs-starter",
       title: "Next.js Portfolio Starter",
       summary: "Accessible card grid, static export for GitHub Pages, shadcn/ui components.",
