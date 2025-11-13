@@ -44,7 +44,7 @@ export type Project = {
       tech: ["Next.js", "TypeScript", "Tailwind", "shadcn/ui"],
       highlights: ["Lighthouse ≥95", "Static export ready", "Dark mode"],
       links: {
-        repo: "https://github.com/yourname/portfolio",
+        repo: "https://github.com/portfolio",
       },
       featured: true,
     },
@@ -56,8 +56,8 @@ export type Project = {
       tech: ["Next.js", "React", "IndexedDB"],
       highlights: ["Search <100ms", "PWA installable"],
       links: {
-        demo: "https://yourname.github.io/portfolio/todo",
-        repo: "https://github.com/yourname/todo-ai",
+        demo: "https://github.io/portfolio/todo",
+        repo: "https://github.com/todo-ai",
       },
     },
     // add more...

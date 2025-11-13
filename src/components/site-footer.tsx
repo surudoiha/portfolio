@@ -28,7 +28,7 @@ export default function SiteFooter() {
 
         <div className="flex gap-4 text-sm">
           <Link
-            href="https://github.com/yourname"
+            href="https://github.com/surudoiha"
             target="_blank"
             rel="noreferrer"
             className="underline underline-offset-4 hover:text-foreground"
@@ -36,13 +36,14 @@ export default function SiteFooter() {
             GitHub
           </Link>
           <Link
-            href="https://linkedin.com/in/yourname"
+            href="https://www.linkedin.com/in/suren-tumasyan-44770836b/"
             target="_blank"
             rel="noreferrer"
             className="underline underline-offset-4 hover:text-foreground"
           >
             LinkedIn
           </Link>
+
         </div>
       </div>
     </footer>
