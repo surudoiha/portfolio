@@ -22,7 +22,7 @@ export type Project = {
       title: "The Crucible — VFX Pipeline Automation",
       summary:
         "A Python-based tool that automates a video post-production pipeline by matching Baselight frame data with Xytech workorders, processing shots, and generating Excel/Vimeo outputs for VFX teams.",
-      image: "/vfx-pipeline.webp", 
+      image: "/public/vfx-pipeline.webp", 
       tech: ["Python", "MongoDB", "FFmpeg", "Vimeo API", "Pandas"],
       highlights: [
         "Cross-references Baselight and Xytech data into MongoDB",
