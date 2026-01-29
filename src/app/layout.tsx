@@ -5,7 +5,7 @@ import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 
 
-const siteName = "SS — Software Engineer";
+const siteName = "Suren Tumasyan — Software Engineer";
 const siteUrl = "https://surudoiha.github.io/portfolio"; 
 const ogImage = `${siteUrl}/og.png`; // static image in /public
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: siteName,
-    template: "%s — SS",
+    template: "%s — Suren Tumasyan",
   },
   description:
     "I build fast, accessible web apps with Next.js, React, and TypeScript.",

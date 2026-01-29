@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { projects } from "@/lib/projects";
 import ProjectGrid from "@/components/project-grid";
+import ResumeSection from "@/components/resume-section";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { FileText, Grid3X3, Download } from "lucide-react";
+import { FileText, Grid3X3 } from "lucide-react";
 
 export default function HomePage() {
   const featured = projects
@@ -15,10 +16,11 @@ export default function HomePage() {
       {/* Hero section with name + tagline */}
       <section className="mb-6 space-y-4">
         <h1 className="text-3xl font-semibold tracking-tight">
-          SS — Software Engineer
+          Suren Tumasyan — Software Engineer
         </h1>
         <p className="max-w-2xl text-muted-foreground">
-          Below you can view my resume and explore selected projects.
+          Building performant web applications and automation tools. Explore my
+          resume and selected projects below.
         </p>
       </section>
 
@@ -36,72 +38,9 @@ export default function HomePage() {
         </TabsList>
 
         {/* Resume tab content */}
-        <TabsContent value="resume" className="mt-6 space-y-6">
-
-          {/* Intro text */}
-          <div>
-            <p className="text-sm text-muted-foreground">
-              You can view my resume directly on this page, download it, or open it in a new tab.
-            </p>
-          </div>
-
-          {/* Toolbar */}
-          <div className="flex flex-wrap items-center gap-3 border rounded-md p-3 bg-muted/30">
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-md border bg-background px-3 py-2 text-sm font-medium shadow-sm hover:bg-muted"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download PDF
-            </Link>
-
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-md border bg-background px-3 py-2 text-sm font-medium shadow-sm hover:bg-muted"
-            >
-              Open in new tab
-            </Link>
-
-            <span className="text-xs text-muted-foreground ml-auto">
-              PDF viewer powered by your browser
-            </span>
-          </div>
-
-          {/* Document viewer container */}
-          <div className="
-              rounded-xl 
-              border 
-              shadow-lg 
-              overflow-hidden 
-              bg-gradient-to-br from-background to-muted/20
-              max-h-[85vh]
-            "
-          >
-            <iframe
-              src="resume.pdf#view=FitH"
-              title="SS Resume"
-              className="h-[85vh] w-full"
-            />
-          </div>
-
-          {/* Fallback text */}
-          <p className="text-xs text-muted-foreground text-center">
-            If you have trouble viewing the embedded PDF,{" "}
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-4"
-            >
-              click here to open it directly.
-            </Link>
-          </p>
+        <TabsContent value="resume" className="mt-6">
+          <ResumeSection />
         </TabsContent>
-
 
         {/* Projects tab content */}
         <TabsContent value="projects" className="mt-6">

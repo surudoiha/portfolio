@@ -9,7 +9,7 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <Link href="/" className="font-semibold tracking-tight">
-            SS
+            ST
           </Link>
         </div>
         <div className="flex items-center gap-2">
