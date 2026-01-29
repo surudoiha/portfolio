@@ -14,7 +14,7 @@ export default function SiteHeader() {
         </div>
         <div className="flex items-center gap-2">
           <a
-            href="mailto:you@example.com"
+            href="mailto:suro2014.ss@gmail.com"
             className="text-sm underline-offset-4 hover:underline"
           >
             Contact

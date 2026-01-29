@@ -39,14 +39,14 @@ export const metadata = {
           <p>
             You can reach me at{" "}
             <a
-              href="mailto:you@example.com"
+              href="mailto:suro2014.ss@gmail.com"
               className="underline underline-offset-4"
             >
-              you@example.com
+              suro2014.ss@gmail.com
             </a>
             , or find me on{" "}
             <a
-              href="https://linkedin.com/in/yourname"
+              href="https://linkedin.com/in/suren-tumasyan-44770836b/"
               className="underline underline-offset-4"
             >
               LinkedIn
