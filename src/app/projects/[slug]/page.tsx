@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { allSlugs, getProject } from "@/lib/projects";
+import { withBasePath } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -265,7 +266,7 @@ export default async function ProjectCasePage(props: Props) {
       {project.image && (
         <div className="mt-8 overflow-hidden rounded-xl border shadow-lg">
           <Image
-            src={project.image}
+            src={withBasePath(project.image)}
             alt={project.title}
             width={1280}
             height={720}

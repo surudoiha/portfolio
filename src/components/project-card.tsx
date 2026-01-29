@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import type { Project } from "@/lib/projects";
-import { cn } from "@/lib/utils"; // if you have cn; otherwise remove and inline classNames
+import { cn, withBasePath } from "@/lib/utils";
 
 type Props = {
   project: Project;
@@ -36,9 +36,8 @@ export default function ProjectCard({ project, className }: Props) {
 
       {project.image ? (
         <div className="aspect-[16/9] w-full overflow-hidden">
-          {/* next/image is unoptimized in export mode (per your next.config) */}
           <Image
-            src={project.image}
+            src={withBasePath(project.image)}
             alt={project.title}
             width={1280}
             height={720}
